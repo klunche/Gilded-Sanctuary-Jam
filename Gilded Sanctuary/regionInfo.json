@@ -1,0 +1,9 @@
+{
+   "regionID":  "GS", 
+   "description":  "Gilded Sanctuary is a region", 
+   "regionName":  "Gilded Sanctuary", 
+   "activated":  true, 
+   "loadOrder": 99, 
+   "url":  "", 
+   "checksum":  "" 
+}

@@ -1,0 +1,5 @@
+-["Gilded Sanctuary", color(180, 255, 80)]
+[#nm:"GS Roots", #tp:"variedSoft", #pxlSize:point(80, 180), #vars:8, #random:0, #depth:7, #round:1, #contourExp:1, #selfShade:1, #highLightBorder:0.5, #depthAffectHilites:0.6, #shadowBorder:0.8, #smoothShading:10, #colorize:1, #tags:["postEffects"], #notes:[]]
+[#nm:"Small Rocks", #tp:"variedStandard", #colorTreatment:"standard", #sz:point(11,5), #repeatL:[1,1,1], #vars:6, #random:1, #tags:["randomFlipX"], #layerExceptions:[], #notes:[]]
+[#nm:"Arch_1_Prop", #tp:"standard", #colorTreatment:"standard", #bevel:1, #sz:point(70, 40), #repeatL:[1], #tags:["effectColorA", "effectColorB", "notTrashProp"], #layerExceptions:[], #notes:[]]
+[#nm:"TwoBalls_1_Prop", #tp:"standard", #colorTreatment:"standard", #bevel:1, #sz:point(70, 40), #repeatL:[1], #tags:["effectColorA", "effectColorB", "notTrashProp"], #layerExceptions:[], #notes:[]]

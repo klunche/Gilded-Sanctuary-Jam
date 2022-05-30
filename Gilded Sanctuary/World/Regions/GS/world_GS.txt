@@ -1,0 +1,21 @@
+ROOMS
+
+END ROOMS
+
+CREATURES
+//all
+
+//white
+
+//white and yellow
+
+//yellow
+
+//red
+
+//white and red
+
+END CREATURES
+
+BAT MIGRATION BLOCKAGES
+END BAT MIGRATION BLOCKAGES

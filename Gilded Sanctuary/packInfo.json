@@ -1,0 +1,12 @@
+{
+  "regionPackName": "Gilded Sanctuary",
+  "description": "Gilded Sanctuary is a region",
+  "author": "Modding Community",
+  "activated": true,
+  "loadOrder": 2147483645,
+  "regions": "GS",
+  "thumbURL": "",
+  "version": "1.0",
+  "requirements": "",
+  "checksum": ""
+}
