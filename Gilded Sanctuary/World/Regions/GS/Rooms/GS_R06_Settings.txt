@@ -1,0 +1,8 @@
+Template: NONE
+Clouds: 0.823682
+Grime: 0
+Palette: 148
+EffectColorA: 0
+EffectColorB: 13
+PlacedObjects: LightSource><780.0371><69.68513><0.2297695~Environment~-735.0787~694.21~50~86.60254~0~1, 
+FadePalette: 149, 0.5196742, 0.5196741
