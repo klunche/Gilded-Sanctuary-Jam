@@ -1,0 +1,7 @@
+Template: NONE
+Clouds: 0.3586957
+Grime: 0.1521739
+Palette: 148
+Effects: LightBurn-0.1086956-20-20, Fog-0.1086956-23-69, 
+AmbientSounds: OMNI><AM_ENV-NatWind.ogg><715.073><492.9069><0.3043478><1, OMNI><AM_ENV-LightWind.ogg><721.1537><407.6279><0.25><1, SPOT><AM_IND-DeepHum.ogg><727.9539><307.1946><0.3586957><1><492.9539><331.1946><-65.35535><-53.35535><0><0.1, 
+FadePalette: 149, 0.4021739

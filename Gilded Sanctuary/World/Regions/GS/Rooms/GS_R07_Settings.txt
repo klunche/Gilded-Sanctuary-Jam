@@ -1,0 +1,7 @@
+Template: NONE
+Clouds: 0.1413043
+Grime: 0.2391304
+Palette: 148
+Effects: LightBurn-0.09782609-20-20, Bloom-0.25-23-65, 
+PlacedObjects: LightBeam><845.4039><919.6277><-169~356~-20~396~70~3~-361~2~0.4~0~0~1, LightSource><-107.9431><1300.942><0.1521739~Environment~-709~-426~50~86.60254~1~1, 
+FadePalette: 149, 0.1086956, 0.1086956
