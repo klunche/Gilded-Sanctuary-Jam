@@ -133,7 +133,7 @@ public class Hooks
             c.Emit(Ldarg_0);
             c.EmitDelegate((BigEelGraphics self) =>
             {
-                if (self.eel is BigEel be && be.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel)
+                if (self.eel is BigEel be && be.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel && self.finSound is not null)
                     self.finSound.volume = 0f;
             });
             if (c.TryGotoNext(MoveType.After,
@@ -175,7 +175,7 @@ public class Hooks
         On.BigEelGraphics.Reset += (orig, self) =>
         {
             orig(self);
-            if (self.eel is BigEel be && be.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel)
+            if (self.eel is BigEel be && be.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel && self.finSound is not null)
                 self.finSound.volume = 0f;
         };
         On.BigEelGraphics.ApplyPalette += (orig, self, sLeaser, rCam, palette) =>
