@@ -1,0 +1,7 @@
+Template: NONE
+Grime: 0
+Palette: 149
+EffectColorA: 14
+EffectColorB: 0
+Effects: LightBurn-0.173913-20-20, 
+FadePalette: 148, 0.8478261, 0.8369565, 0
