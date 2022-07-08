@@ -10,3 +10,4 @@ Subregion: Gilded Sanctuary
 Subregion: Tangled Steeple
 playerGuideOverseerSpawnChance: 0.4
 Room Setting Templates: Gilded Sanctuary
+Room_Attr: GS_R08: FlyingBigEel-4,
