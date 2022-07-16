@@ -1,0 +1,4 @@
+Template: NONE
+Clouds: 0.25
+Palette: 149
+FadePalette: 148, 0.5, 0.5
