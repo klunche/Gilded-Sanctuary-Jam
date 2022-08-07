@@ -82,7 +82,7 @@ public class Hooks
             for (var i = 0; i < il.Instrs.Count; i++)
             {
                 var ins = il.Instrs[i];
-                if (ins.MatchCallvirt<BodyChunk>("get_submersion"))
+                if (ins.MatchCallOrCallvirt<BodyChunk>("get_submersion"))
                 {
                     c.Goto(ins, MoveType.After);
                     c.Emit(Ldarg_0);
@@ -145,7 +145,7 @@ public class Hooks
                 x => x.MatchLdloc(out _),
                 x => x.MatchLdelemRef(),
                 x => x.MatchLdfld<BodyPart>("pos"),
-                x => x.MatchCallvirt<Room>("PointSubmerged")))
+                x => x.MatchCallOrCallvirt<Room>("PointSubmerged")))
             {
                 c.Emit(Ldarg_0);
                 c.EmitDelegate((bool flag, BigEelGraphics self) => self.eel is BigEel be && be.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel || flag);
@@ -162,9 +162,9 @@ public class Hooks
                 x => x.MatchLdelemRef(),
                 x => x.MatchLdloc(out _),
                 x => x.MatchLdloc(out _),
-                x => x.MatchCall(out _),
+                x => x.MatchCallOrCallvirt(out _),
                 x => x.MatchLdfld<BodyPart>("pos"),
-                x => x.MatchCallvirt<Room>("PointSubmerged")))
+                x => x.MatchCallOrCallvirt<Room>("PointSubmerged")))
             {
                 c.Emit(Ldarg_0);
                 c.EmitDelegate((bool flag, BigEelGraphics self) => self.eel is BigEel be && be.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel || flag);
@@ -232,8 +232,8 @@ public class Hooks
                 x => x.MatchLdfld<AbstractCreatureAI>("world"),
                 x => x.MatchLdarg(0),
                 x => x.MatchLdfld<AbstractCreatureAI>("world"),
-                x => x.MatchCallvirt<World>("get_firstRoomIndex"),
-                x => x.MatchCallvirt(typeof(World).GetMethod("GetAbstractRoom", Public | NonPublic | Static | Instance, Type.DefaultBinder, new[] { typeof(int) }, null)),
+                x => x.MatchCallOrCallvirt<World>("get_firstRoomIndex"),
+                x => x.MatchCallOrCallvirt(typeof(World).GetMethod("GetAbstractRoom", Public | NonPublic | Static | Instance, Type.DefaultBinder, new[] { typeof(int) }, null)),
                 x => x.MatchLdfld<AbstractRoom>("nodes"),
                 x => x.MatchLdloc(out _),
                 x => x.MatchLdelema<AbstractRoomNode>(),
@@ -276,7 +276,7 @@ public class Hooks
                 x => x.MatchLdfld<AbstractCreatureAI>("parent"),
                 x => x.MatchLdfld<AbstractCreature>("creatureTemplate"),
                 x => x.MatchLdfld<CreatureTemplate>("type"),
-                x => x.MatchCallvirt<AbstractRoom>("AttractionForCreature"),
+                x => x.MatchCallOrCallvirt<AbstractRoom>("AttractionForCreature"),
                 x => x.MatchLdcI4(1));
             var loc2 = -1;
             if (c.TryGotoNext(
@@ -286,7 +286,7 @@ public class Hooks
                 x => x.MatchLdloc(out _),
                 x => x.MatchLdfld<AbstractRoom>("creatures"),
                 x => x.MatchLdloc(out _),
-                x => x.MatchCallvirt(out _),
+                x => x.MatchCallOrCallvirt(out _),
                 x => x.MatchLdfld<AbstractCreature>("creatureTemplate"),
                 x => x.MatchLdfld<CreatureTemplate>("type"),
                 x => x.MatchLdcI4(23),
@@ -449,7 +449,7 @@ public class Hooks
                 x => x.MatchLdfld<GarbageWormAI.CreatureInterest>("crit"),
                 x => x.MatchLdfld<Tracker.CreatureRepresentation>("representedCreature"),
                 x => x.MatchLdfld<AbstractCreature>("creatureTemplate"),
-                x => x.MatchCallvirt<CreatureTemplate>("get_IsVulture"),
+                x => x.MatchCallOrCallvirt<CreatureTemplate>("get_IsVulture"),
                 x => x.MatchBrfalse(out _),
                 x => x.MatchLdcR4(1000f),
                 x => x.MatchStloc(out loc2))
