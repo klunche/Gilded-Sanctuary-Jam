@@ -39,7 +39,7 @@ sealed class FlyingBigEelCritob : Critob
         t.abstractedLaziness = 100;
         t.requireAImap = true;
         t.offScreenSpeed = 1f;
-        t.bodySize = 100f;
+        t.bodySize = 75f;
         t.grasps = 1;
         t.stowFoodInDen = true;
         t.visualRadius = 1450f;

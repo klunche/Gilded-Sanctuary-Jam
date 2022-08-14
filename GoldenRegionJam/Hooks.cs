@@ -9,6 +9,8 @@ using MonoMod.RuntimeDetour;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Reflection;
+using RWCustom;
+using DevInterface;
 
 namespace GoldenRegionJam;
 
@@ -25,6 +27,34 @@ public class Hooks
                 if (effect.type == EnumExt_GoldenRegionJam.GRJGoldenFlakes)
                     self.AddObject(new GoldFlakesEffect(self));
             }
+            for (var i = 0; i < self.roomSettings.placedObjects.Count; i++)
+            {
+                var pObj = self.roomSettings.placedObjects[i];
+                if (pObj.type == EnumExt_GoldenRegionJam.GRJLeviathanPushBack)
+                    self.AddObject(new LeviathanPushbackObject(self, pObj.data as PlacedObject.ResizableObjectData));
+            }
+        };
+        On.PlacedObject.GenerateEmptyData += (orig, self) =>
+        {
+            orig(self);
+            if (self.type == EnumExt_GoldenRegionJam.GRJLeviathanPushBack)
+                self.data = new PlacedObject.ResizableObjectData(self);
+        };
+        On.DevInterface.ObjectsPage.CreateObjRep += (orig, self, tp, pObj) =>
+        {
+            if (tp == EnumExt_GoldenRegionJam.GRJLeviathanPushBack)
+            {
+                if (pObj is null)
+                    self.RoomSettings.placedObjects.Add(pObj = new(tp, null)
+                    {
+                        pos = self.owner.room.game.cameras[0].pos + Vector2.Lerp(self.owner.mousePos, new(-683f, 384f), .25f) + Custom.DegToVec(Random.value * 360f) * .2f
+                    });
+                var pObjRep = new ResizeableObjectRepresentation(self.owner, $"{tp}_Rep", self, pObj, tp.ToString(), true);
+                self.tempNodes.Add(pObjRep);
+                self.subNodes.Add(pObjRep);
+            }
+            else
+                orig(self, tp, pObj);
         };
         On.Room.NowViewed += (orig, self) =>
         {
@@ -42,26 +72,43 @@ public class Hooks
                 }
             }
         };
-        On.BigEel.ctor += (orig, self, abstractCreature, world) =>
+        IL.BigEel.ctor += il =>
         {
-            orig(self, abstractCreature, world);
-            var seed = Random.seed;
-            Random.seed = self.abstractCreature.ID.RandomSeed;
-            if (self.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel)
+            ILCursor c = new(il);
+            if (c.TryGotoNext(
+                x => x.MatchLdarg(0),
+                x => x.MatchLdcI4(20),
+                x => x.MatchNewarr<BodyChunk>(),
+                x => x.MatchCallOrCallvirt<PhysicalObject>("set_bodyChunks")))
             {
-                self.iVars.patternColorB = HSLColor.Lerp(RainWorld.GoldHSL, new HSLColor(RainWorld.GoldHSL.hue, RainWorld.GoldHSL.saturation, RainWorld.GoldHSL.lightness + (Random.value / 12f)), .5f);
-                self.iVars.patternColorA = RainWorld.GoldHSL;
-                self.iVars.patternColorA.hue = .5f;
-                self.iVars.patternColorA = HSLColor.Lerp(self.iVars.patternColorA, new(RainWorld.GoldHSL.hue + (Random.value / 50f), RainWorld.GoldHSL.saturation + (Random.value / 50f), RainWorld.GoldHSL.lightness + (Random.value / 4f)), .9f);
-                self.airFriction = .98f;
-                self.waterFriction = .999f;
-                self.gravity = 0f;
-                self.buoyancy = 1f;
-                self.bounce = 0f;
-                for (var i = 0; i < self.bodyChunks.Length; i++)
-                    self.bodyChunks[i].rad -= 5f;
+                c.Index += 2;
+                c.Emit(Ldarg_0);
+                c.EmitDelegate((int length, BigEel self) => self.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel ? length / 2 : length);
             }
-            Random.seed = seed;
+            else
+                logger.LogError("Couldn't ILHook BigEel.ctor! (part 1)");
+            c.Index = il.Body.Instructions.Count - 1;
+            c.Emit(Ldarg_0);
+            c.EmitDelegate((BigEel self) =>
+            {
+                if (self.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel)
+                {
+                    var seed = Random.seed;
+                    Random.seed = self.abstractCreature.ID.RandomSeed;
+                    self.iVars.patternColorB = HSLColor.Lerp(RainWorld.GoldHSL, new HSLColor(RainWorld.GoldHSL.hue, RainWorld.GoldHSL.saturation, RainWorld.GoldHSL.lightness + (Random.value / 12f)), .5f);
+                    self.iVars.patternColorA = RainWorld.GoldHSL;
+                    self.iVars.patternColorA.hue = .5f;
+                    self.iVars.patternColorA = HSLColor.Lerp(self.iVars.patternColorA, new(RainWorld.GoldHSL.hue + (Random.value / 50f), RainWorld.GoldHSL.saturation + (Random.value / 50f), RainWorld.GoldHSL.lightness + (Random.value / 4f)), .9f);
+                    self.airFriction = .98f;
+                    self.waterFriction = .999f;
+                    self.gravity = 0f;
+                    self.buoyancy = 1f;
+                    self.bounce = 0f;
+                    for (var i = 0; i < self.bodyChunks.Length; i++)
+                        self.bodyChunks[i].rad *= .75f;
+                    Random.seed = seed;
+                }
+            });
         };
         IL.BigEel.AccessSwimSpace += il =>
         {
@@ -104,6 +151,15 @@ public class Hooks
             else
                 logger.LogError("Couldn't ILHook BigEel.JawsSnap!");
         };
+        On.BigEel.NewRoom += (orig, self, newRoom) =>
+        {
+            orig(self, newRoom);
+            for (var i = 0; i < newRoom.roomSettings.placedObjects.Count; i++)
+            {
+                if (newRoom.roomSettings.placedObjects[i].type == EnumExt_GoldenRegionJam.GRJLeviathanPushBack)
+                    self.antiStrandingZones.Add(newRoom.roomSettings.placedObjects[i]);
+            }
+        };
         IL.BigEelPather.FollowPath += il =>
         {
             ILCursor c = new(il);
@@ -127,6 +183,22 @@ public class Hooks
             else
                 logger.LogError("Couldn't ILHook BigEelPather.FollowPath (part 2)!");
         };
+        IL.BigEelGraphics.ctor += il =>
+        {
+            ILCursor c = new(il);
+            if (c.TryGotoNext(
+                x => x.MatchLdarg(0),
+                x => x.MatchLdcI4(60),
+                x => x.MatchNewarr<TailSegment>(),
+                x => x.MatchStfld<BigEelGraphics>("tail")))
+            {
+                c.Index += 2;
+                c.Emit(Ldarg_0);
+                c.EmitDelegate((int length, BigEelGraphics self) => self.eel.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel ? length / 2 + length / 4 : length);
+            }
+            else
+                logger.LogError("Couldn't ILHook BigEelGraphics.ctor!");
+        };
         IL.BigEelGraphics.Update += il =>
         {
             ILCursor c = new(il);
@@ -136,6 +208,24 @@ public class Hooks
                 if (self.eel is BigEel be && be.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel && self.finSound is not null)
                     self.finSound.volume = 0f;
             });
+            if (c.TryGotoNext(MoveType.After,
+                x => x.MatchLdarg(0),
+                x => x.MatchLdfld<BigEelGraphics>("eel"),
+                x => x.MatchLdfld<BigEel>("swimSpeed"),
+                x => x.MatchCall<Mathf>("Lerp"),
+                x => x.MatchDiv(),
+                x => x.MatchSub(),
+                x => x.MatchStfld<BigEelGraphics>("tailSwim")))
+            {
+                c.Emit(Ldarg_0);
+                c.EmitDelegate((BigEelGraphics self) =>
+                {
+                    if (self.eel is BigEel be && be.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel)
+                        self.tailSwim /= 2f;
+                });
+            }
+            else 
+                logger.LogError("Couldn't ILHook BigEelGraphics.Update (part 1)!");
             if (c.TryGotoNext(MoveType.After,
                 x => x.MatchLdarg(0),
                 x => x.MatchLdfld<BigEelGraphics>("eel"),
@@ -151,7 +241,7 @@ public class Hooks
                 c.EmitDelegate((bool flag, BigEelGraphics self) => self.eel is BigEel be && be.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel || flag);
             }
             else
-                logger.LogError("Couldn't ILHook BigEelGraphics.Update (part 1)!");
+                logger.LogError("Couldn't ILHook BigEelGraphics.Update (part 2)!");
             if (c.TryGotoNext(MoveType.After,
                 x => x.MatchLdarg(0),
                 x => x.MatchLdfld<BigEelGraphics>("eel"),
@@ -170,7 +260,7 @@ public class Hooks
                 c.EmitDelegate((bool flag, BigEelGraphics self) => self.eel is BigEel be && be.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel || flag);
             }
             else
-                logger.LogError("Couldn't ILHook BigEelGraphics.Update (part 2)!");
+                logger.LogError("Couldn't ILHook BigEelGraphics.Update (part 3)!");
         };
         On.BigEelGraphics.Reset += (orig, self) =>
         {
@@ -340,6 +430,25 @@ public class Hooks
                     c.EmitDelegate((int defaultLevel, BigEelAI self) => self.eel is BigEel be && be.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel && be.room is Room r ? r.TileHeight : defaultLevel);
                 }
             }
+            c.Index = il.Body.Instructions.Count - 1;
+            c.Emit(Ldarg_0);
+            c.Emit(Ldarg_1);
+            c.EmitDelegate((CreatureTemplate.Relationship rel, BigEelAI self, RelationshipTracker.DynamicRelationship dRelation) =>
+            {
+                if (rel.type is CreatureTemplate.Relationship.Type.Eats && self.eel is BigEel be && be.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel && be.antiStrandingZones.Count > 0 && dRelation.trackerRep?.representedCreature?.realizedCreature?.mainBodyChunk is BodyChunk b)
+                {
+                    for (var j = 0; j < be.antiStrandingZones.Count; j++)
+                    {
+                        if (Custom.DistLess(b.pos, be.antiStrandingZones[j].pos, 100f))
+                        {
+                            rel.type = CreatureTemplate.Relationship.Type.Ignores;
+                            rel.intensity = 0f;
+                            break;
+                        }
+                    }
+                }
+                return rel;
+            });
         });
         IL.BigEelAI.Update += il =>
         {
@@ -467,6 +576,22 @@ public class Hooks
             }
             else
                 logger.LogError("Couldn't ILHook GarbageWormAI.Update!");
+        };
+        On.PathFinder.CoordinateReachableAndGetbackable += (orig, self, coord) =>
+        {
+            var res = orig(self, coord);
+            if (coord.TileDefined && self.creature?.creatureTemplate.type == EnumExt_GoldenRegionJam.FlyingBigEel && self.creature.realizedCreature is BigEel be && be.antiStrandingZones.Count > 0 && be.room is not null)
+            {
+                for (var j = 0; j < be.antiStrandingZones.Count; j++)
+                {
+                    if (Custom.DistLess(be.room.MiddleOfTile(coord), be.antiStrandingZones[j].pos, 100f))
+                    {
+                        res = false;
+                        break;
+                    }
+                }
+            }
+            return res;
         };
         new Hook(typeof(Fisobs.Core.Ext).GetMethod("LoadAtlasFromEmbRes", Public | NonPublic | Static | Instance), (Func<Assembly, string, FAtlas> orig, Assembly assembly, string resource) =>
         {
