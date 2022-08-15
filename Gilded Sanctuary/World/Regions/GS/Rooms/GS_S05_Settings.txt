@@ -3,7 +3,7 @@ DangerType: Thunder
 Clouds: 0.3586957
 Grime: 0.1521739
 Palette: 148
-Effects: LightBurn-0.1413043-20-20, GRJGoldenFlakes-0.06521739-275-122, SandStorm-1-38-92, 
+Effects: LightBurn-0.1413043-20-20, GRJGoldenFlakes-0.06521739-275-122, 
 PlacedObjects: LightSource><-204.0947><41.37608><0.2065217~Environment~945~550~50~86.60254~1~1, LightSource><-207.2872><608.4465><0.2065217~Environment~793~-192~50~86.60254~1~1, CustomDecal><104.0955><56.42577><-91~517~711~664~629~-94~0~0~0~1~0~RF_Sand~0.1847826~1~0.1847826~1~0.1847826~1~0.1847826~1, 
 AmbientSounds: OMNI><AM_ENV-NatWind.ogg><715.073><492.9069><0.3043478><1, OMNI><AM_ENV-LightWind.ogg><721.1537><407.6279><0.25><1, SPOT><AM_IND-DeepHum.ogg><727.9539><307.1946><0.3586957><1><492.9539><331.1946><-65.35535><-53.35535><0><0.1, 
 FadePalette: 149, 0.4021739
