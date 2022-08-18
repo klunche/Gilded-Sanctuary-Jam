@@ -11,8 +11,8 @@ public class GoldenRegionJamMain : BaseUnityPlugin
     public void OnEnable()
     {
         logger = Logger;
-        if (EnumExt_GoldenRegionJam.GRJGoldenFlakes == 0) 
-            Logger.LogWarning("EnumExtender is missing!");
         Content.Register(new FlyingBigEelCritob());
     }
+    
+    public void OnDisable() => logger = null;
 }
