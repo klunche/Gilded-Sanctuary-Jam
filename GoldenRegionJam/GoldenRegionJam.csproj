@@ -6,6 +6,18 @@
     <Company>LB Gamer/M4rbleL1ne</Company>
   </PropertyGroup>
   <ItemGroup>
+	<EmbeddedResource Include="FEelJaw1A.png">
+	  <LogicalName>%(Filename)</LogicalName>
+	</EmbeddedResource>
+	<EmbeddedResource Include="FEelJaw1B.png">
+	  <LogicalName>%(Filename)</LogicalName>
+	</EmbeddedResource>
+	<EmbeddedResource Include="FEelJaw2A.png">
+	  <LogicalName>%(Filename)</LogicalName>
+	</EmbeddedResource>
+	<EmbeddedResource Include="FEelJaw2B.png">
+	  <LogicalName>%(Filename)</LogicalName>
+	</EmbeddedResource>
     <Reference Include="Assembly-CSharp">
       <HintPath>References\Assembly-CSharp.dll</HintPath>
     </Reference>

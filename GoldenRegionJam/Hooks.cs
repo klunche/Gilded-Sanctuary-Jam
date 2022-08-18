@@ -198,6 +198,16 @@ public class Hooks
             }
             else
                 logger.LogError("Couldn't ILHook BigEelGraphics.ctor!");
+            c.Index = il.Body.Instructions.Count - 1;
+            c.Emit(Ldarg_0);
+            c.EmitDelegate((BigEelGraphics self) =>
+            {
+                if (self.eel.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel)
+                {
+                    for (var n = 0; n < self.eyesData.Length; n++)
+                        self.eyesData[n] *= .75f;
+                }
+            });
         };
         IL.BigEelGraphics.Update += il =>
         {
@@ -295,6 +305,38 @@ public class Hooks
                 {
                     for (var l = 0; l < self.fins.Length; l++)
                         sLeaser.sprites[self.FinSprite(l, k)].shader = rCam.game.rainWorld.Shaders["TentaclePlant"];
+                    for (var num = 0; num < 2; num++)
+                    {
+                        for (var n = 0; n < 4; n++)
+                        {
+                            if (n % 2 is 0)
+                                sLeaser.sprites[self.BeakArmSprite(n, num, k)].scaleX *= .75f;
+                            else
+                                sLeaser.sprites[self.BeakArmSprite(n, num, k)].scale *= .75f;
+                        }
+                        sLeaser.sprites[self.BeakSprite(k, num)].element = Futile.atlasManager.GetElementWithName("FEelJaw" + (2 - k) + (num is 0 ? "A" : "B"));
+                    }
+                }
+            }
+        };
+        On.BigEelGraphics.DrawSprites += (orig, self, sLeaser, rCam, timeStacker, camPos) =>
+        {
+            orig(self, sLeaser, rCam, timeStacker, camPos);
+            var vector4 = Vector2.Lerp(self.eel.bodyChunks[0].lastPos, self.eel.bodyChunks[0].pos, timeStacker);
+            var vec = Vector2.Lerp(self.eel.bodyChunks[1].lastPos, self.eel.bodyChunks[1].pos, timeStacker);
+            var vec2 = Vector2.Lerp(vector4, vec, .5f) - camPos;
+            if (self.eel is BigEel be && be.Template.type == EnumExt_GoldenRegionJam.FlyingBigEel)
+            {
+                for (var k = 0; k < 2; k++)
+                {
+                    for (var num12 = 0; num12 < 2; num12++)
+                    {
+                        for (var num14 = 0; num14 < 4; num14++)
+                        {
+                            sLeaser.sprites[self.BeakArmSprite(num14, num12, k)].x = Mathf.Lerp(sLeaser.sprites[self.BeakArmSprite(num14, num12, k)].x, vec2.x, .2f);
+                            sLeaser.sprites[self.BeakArmSprite(num14, num12, k)].y = Mathf.Lerp(sLeaser.sprites[self.BeakArmSprite(num14, num12, k)].y, vec2.y, .2f);
+                        }
+                    }
                 }
             }
         };

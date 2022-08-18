@@ -92,7 +92,7 @@ sealed class FlyingBigEelCritob : Critob
 
     public override void LoadResources(RainWorld rainWorld)
     {
-        string[] sprAr = { };
+        string[] sprAr = { "FEelJaw1A", "FEelJaw1B", "FEelJaw2A", "FEelJaw2B"};
         foreach (var spr in sprAr) 
             Ext.LoadAtlasFromEmbRes(GetType().Assembly, spr);
     }
