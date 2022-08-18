@@ -1,0 +1,9 @@
+DangerType: None
+Clouds: 0.5217391
+Grime: 0
+Palette: 149
+EffectColorA: 14
+EffectColorB: 14
+Effects: LightBurn-0.07608695-20-20, ZeroG-0.3152174-30-30, GRJGoldenFlakes-0.05434782-40-40, 
+PlacedObjects: CustomDecal><166.1839><72.81122><-7~651~433~692~366~-24~405~-292~0~1~0~GS_GoldRust~0.4782609~1~0.4782609~1~0.4782609~1~0.4782609~1, CustomDecal><519.8874><147.1046><-56~568~567~534~519~-55~15~-360~0~1~0~GS_GoldRust~0.5~1~0.5~1~0.5~1~0.5~1, CustomDecal><1024.292><197.5544><-227~623~357~621~365~-115~-413~-421~0~1~0~GS_GoldRust~0.25~1~0.25~1~0.25~1~0.25~1, InsectGroup><761.0774><463.6011><0~100~-49~-448~GrassHopper~0.3152174, LightSource><734.3794><456.5905><0.2608696~Environment~-713~-78~-14~-444.3975~0~1, NeedleEgg><527.0159><202.3007><-32~-195~4~9, LightSource><187.6055><648.1383><0.1521739~Environment~799~-297~94~-640.3975~0~1, NoLeviathanStrandingZone><240.3309><520.1432><1~53, NoLeviathanStrandingZone><48.6775><704.4078><0~128, NoLeviathanStrandingZone><522.7116><835.3037><136~-29, NoLeviathanStrandingZone><335.9481><200.2776><-69~81, NoLeviathanStrandingZone><493.0692><141.0854><0~63, NoLeviathanStrandingZone><1032.13><690.9098><0~89, NoLeviathanStrandingZone><1088.421><265.3956><-13~107, NoLeviathanStrandingZone><1057.344><367.6766><3~81, NoLeviathanStrandingZone><506.5601><562.9372><-27~129, NoLeviathanStrandingZone><525.2914><370.5543><2~88, NoLeviathanStrandingZone><818.9379><344.3185><-78~57, NoLeviathanStrandingZone><718.9648><395.1969><0~67, NoLeviathanStrandingZone><781.1614><597.1182><45~100, NoLeviathanStrandingZone><910.9364><569.4396><4~68, 
+FadePalette: 148, 0.173913

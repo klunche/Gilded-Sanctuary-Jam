@@ -4,6 +4,6 @@ Grime: 0
 Palette: 148
 EffectColorA: 0
 EffectColorB: 13
-Effects: GRJGoldenFlakes-0.1413043-20-20, LightBurn-0.04347826-30-30, 
+Effects: GRJGoldenFlakes-0.1413043-20-20, LightBurn-0.04347826-30-30, ZeroG-0.1304348-40-40, 
 PlacedObjects: LightSource><780.0371><69.68513><0.2297695~Environment~-735.0787~694.21~50~86.60254~0~1, 
 FadePalette: 149, 0.1392394, 0.1501088
