@@ -1,0 +1,4 @@
+DangerType: Flood
+Grime: 0.4072013
+Palette: 148
+Effects: LightBurn-0.179798-20-20, 
