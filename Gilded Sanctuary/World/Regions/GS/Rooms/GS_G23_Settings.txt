@@ -1,5 +1,5 @@
 Template: NONE
-Clouds: 0.2041576
+Clouds: 0.345462
 Grime: 0.1577583
 Palette: 148
 EffectColorA: 0
