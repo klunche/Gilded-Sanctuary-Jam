@@ -1,3 +1,4 @@
+DangerType: None
 Clouds: 0.4456522
 Grime: 0.2065217
 Palette: 149
