@@ -1,0 +1,7 @@
+Clouds: 0.1521739
+Grime: 0.2065217
+Palette: 148
+EffectColorA: 9
+EffectColorB: 21
+Effects: AboveCloudsView-1-20-20, LightBurn-0.1086956-30-30, ZeroG-0.4021739-40-40, 
+FadePalette: 149, 0.5, 0.5
