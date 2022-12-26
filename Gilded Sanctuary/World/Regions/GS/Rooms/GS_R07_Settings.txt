@@ -1,6 +1,8 @@
 Template: NONE
 DangerType: Thunder
 CeilingDrips: 0
+RainIntensity: 0.3586957
+RumbleIntensity: 0.3369565
 Clouds: 0.1413043
 Grime: 0.2391304
 Palette: 148

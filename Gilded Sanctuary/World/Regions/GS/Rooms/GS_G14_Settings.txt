@@ -1,4 +1,7 @@
+DangerType: None
 CeilingDrips: 0
+RainIntensity: 0
+RumbleIntensity: 0
 Clouds: 0.2608696
 Grime: 0
 Palette: 149

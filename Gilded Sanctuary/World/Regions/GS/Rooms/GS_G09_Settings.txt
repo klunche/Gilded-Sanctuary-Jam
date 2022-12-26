@@ -1,8 +1,10 @@
-DangerType: Flood
+DangerType: Thunder
 CeilingDrips: 0
+RainIntensity: 0.04347826
+RumbleIntensity: 0.06521739
 Clouds: 0.6739131
 Grime: 0.2876361
 Palette: 148
-Effects: LightBurn-0.07110231-20-20, 
+Effects: LightBurn-0.07110231-20-20, SandStorm-0.07608695-30-30, ZeroG-0.2173913-40-40, 
 PlacedObjects: CustomDecal><242.4117><33.67947><-158~762~466~764~590~-4~-235~-301~0~1~0~RF_Sand~0.1956522~1~0.1956522~1~0.1956522~1~0.1956522~1, CustomDecal><423.6882><191.0598><-46~502~197~445~115~-149~-431~-15~0~1~0~GS_GoldRust~0.3043478~1~0.3043478~1~0.3043478~1~0.3043478~1, LightSource><493.598><326.8701><0.07608695~Environment~195~168~50~86.60254~1~1, LightSource><497.0009><557.55><0.08695652~Environment~207~157~50~86.60254~1~1, 
 FadePalette: 149, 0.1413043
