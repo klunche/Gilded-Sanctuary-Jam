@@ -1,0 +1,6 @@
+Template: NONE
+Clouds: 0.1005322
+Grime: 0.1906702
+Palette: 148
+FadePalette: 149, 0.3711959
+WetTerrain: OFF
