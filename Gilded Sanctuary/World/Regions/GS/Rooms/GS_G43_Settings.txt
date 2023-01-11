@@ -1,0 +1,10 @@
+Template: NONE
+CeilingDrips: 0.423913
+Clouds: 0.3043478
+Grime: 0
+Palette: 148
+EffectColorA: 9
+Effects: LightBurn-0.5108696-20-20, 
+PlacedObjects: LightSource><745.3025><547.5316><0.4021739~Environment~97~-103~50~86.60254~1~0, CustomDecal><477.1926><77.30841><-25~428~317~252~281~-21~483~172~0~1~0~GS_GoldRust~0.3043478~0.5108696~0.1413043~0.5108696~1~0.5108696~0.3043478~0.5108696, LightSource><531.7215><164.6979><0.2282609~Environment~163~31~50~86.60254~1~0, LightSource><722.419><545.9329><0.1413043~Environment~276~-392~-435~99.60254~1~1, DangleFruit><650.3117><522.8175><0~0~2~3, DangleFruit><691.0511><632.2712><0~0~2~3, DangleFruit><785.0554><588.046><0~0~2~3, 
+AmbientSounds: OMNI><AM_SUB-CaveTone.ogg><779.8363><232.9304><0.2717391><1, 
+FadePalette: 149, 0.2173913
