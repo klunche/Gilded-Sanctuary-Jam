@@ -1,6 +1,13 @@
 Template: NONE
+DangerType: None
+WaveSpeed: 0.5021799
+WaveLength: 0.7489101
+WaveAmplitude: 0.04860936
+SecondWaveLength: 0.1666667
+SecondWaveAmplitude: 0
 Clouds: 0.1005322
 Grime: 0.1906702
 Palette: 148
+Effects: ZeroG-0.3804348-20-20, 
 FadePalette: 149, 0.3711959
 WetTerrain: OFF
