@@ -1,0 +1,11 @@
+{
+	"id": "jam.gildedsanctuary",
+	"name": "Gilded Sanctuary",
+	"version": "1.0",
+	"authors": "Modding Community",
+	"description": "Gilded Sanctuary is a region",
+	"requirements": ["crs", "regionkit"],
+	"requirement_names": ["Custom Regions Support", "RegionKit"],
+	"tags": ["Regions"],
+	"checksum_override_version": false
+}

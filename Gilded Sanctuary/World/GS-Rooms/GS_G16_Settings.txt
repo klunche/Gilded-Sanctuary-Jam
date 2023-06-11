@@ -1,0 +1,9 @@
+DangerType: None
+CeilingDrips: 0
+Clouds: 0.2934783
+Grime: 0.1304348
+Palette: 148
+Effects: LightBurn-0.08704144-20-20, RockFlea-0.05434782-30-30, ZeroG-0.3478261-40-40, 
+PlacedObjects: LightSource><687.5798><343.355><0.08695652~Environment~-477~95~50~86.60254~1~1, CustomDecal><92.59558><16.8243><-259~703~1243~707~1241~-67~0~0~0~1~0~RF_Sand~0.1521739~1~0.1521739~1~0.1521739~1~0.1521739~1, 
+AmbientSounds: SPOT><AM_IND-ElectricHum02.ogg><716.2658><244.343><0.5><1><986.7424><97.89696><-35.35534><-35.35534><0><0.1, SPOT><AM_IND-ElectricHum03.ogg><381.267><508.4176><0.5><1><205.1256><385.9832><-35.35534><-35.35534><0><0.1, 
+FadePalette: 149, 0.3516046

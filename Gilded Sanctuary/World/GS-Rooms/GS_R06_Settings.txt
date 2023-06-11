@@ -1,0 +1,13 @@
+Template: NONE
+DangerType: Thunder
+CeilingDrips: 0
+RainIntensity: 0.173913
+RumbleIntensity: 0.1630435
+Clouds: 0.823682
+Grime: 0
+Palette: 148
+EffectColorA: 0
+EffectColorB: 13
+Effects: GRJGoldenFlakes-0.1413043-20-20, LightBurn-0.04347826-30-30, ZeroG-0.1304348-40-40, SandStorm-0.1521739-50-50, 
+PlacedObjects: LightSource><780.0371><69.68513><0.2297695~Environment~-735.0787~694.21~50~86.60254~1~1, LightSource><899.7275><1029.552><0.1086956~Environment~-718~-198~50~86.60254~1~1, LightSource><-39.84857><1056.326><0.09782609~Environment~451~18~50~86.60254~1~1, 
+FadePalette: 149, 0.1392394, 0.1501088

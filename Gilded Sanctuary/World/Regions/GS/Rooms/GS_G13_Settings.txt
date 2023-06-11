@@ -1,9 +1,0 @@
-DangerType: None
-Grime: 0.1413043
-Palette: 149
-EffectColorA: 9
-EffectColorB: 14
-Effects: AboveCloudsView-1-20-20, LightBurn-0.326087-56-80, ZeroG-0.3804348-30-30, 
-PlacedObjects: LightSource><463.0004><433.45><0.2173913~Environment~249~64~-490~-480.3975~1~1, LightSource><286.5525><391.2812><0.05434782~Environment~88~295~-314~-434.3975~1~1, LightSource><769.5537><347.9616><0.1521739~Environment~33~153~-794~-393.3975~1~1, LightSource><493.9294><180.8383><0.1956522~Environment~95~120~-518~-224.3975~1~0, LightSource><486.4905><438.4498><0.4347826~Environment~372~-180~-507~-479.3975~1~0, LightSource><458.0548><607.7936><0.1630435~Environment~190~19~-483~-650.3975~1~1, CustomDecal><341.249><57.45003><-160~299~289~531~376~66~-484~-22~0.3152174~0.4456522~0~GS_GoldRust~0.7717391~1~0~1~0.7717391~1~0.7717391~1, 
-AmbientSounds: OMNI><AM_ENV-NatWind.ogg><730.8932><461.3309><0.2826087><0.7847826, OMNI><AM_IND-Fabrik01.ogg><718.8203><219.1622><0.1956522><1.117391, 
-FadePalette: 148, 0.173913

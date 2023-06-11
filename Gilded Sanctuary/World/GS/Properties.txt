@@ -1,0 +1,14 @@
+kelpColor: 0.75, 0.59, 0.06
+Palette: 149
+batDepleteCyclesMin: 2
+batDepleteCyclesMax: 7
+batDepleteCyclesMaxIfLessThanTwoLeft: 3
+batDepleteCyclesMaxIfLessThanFiveLeft: 4
+overseersSpawnChance: 0.8
+overseersMin: 0
+overseersMax: 6
+Subregion: Gilded Sanctuary
+Subregion: Tangled Steeple
+playerGuideOverseerSpawnChance: 0.4
+Room Setting Templates: Gilded Sanctuary
+Room_Attr: GS_R08: FlyingBigEel-4,
