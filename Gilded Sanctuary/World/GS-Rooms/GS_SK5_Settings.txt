@@ -1,0 +1,9 @@
+Template: NONE
+RumbleIntensity: 1
+Grime: 0
+Palette: 149
+EffectColorA: 9
+EffectColorB: 15
+Effects: SkyAndLightBloom-0.2065217-20-20, 
+PlacedObjects: LightSource><418.574><511.3142><0.2282609~Environment~-49~111~50~86.60254~1~1, LightSource><491.1217><403.0966><0.2065217~Environment~0~118~50~86.60254~1~1, LightSource><487.9445><397.2031><0.25~Environment~-211~35~51~12.60254~1~0, LightBeam><578.1526><271.4247><68~75~70~27~9~-33~-494~189~0.1608694~0~0~1, LightBeam><295.1156><249.3981><86~91~89~48~13~-31~-386~-154~0.1608694~0~0~1, LightBeam><408.6361><234.8535><61~215~130~216~193~-17~-549~68~0.1608696~0~0~1, LightSource><311.642><247.8317><1~Environment~-77~93~50~86.60254~1~0, LightSource><596.0955><272.373><1~Environment~-53~90~50~86.60254~1~0, CustomDecal><150.9482><53.22311><4~649~686~655~706~0~-347~243~0~1~0~RF_Sand~0.5~1~0.5~1~0.5~1~0.5~1, 
+FadePalette: 148, 0.3043478
