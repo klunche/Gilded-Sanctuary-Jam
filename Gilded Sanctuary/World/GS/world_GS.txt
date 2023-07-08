@@ -1,4 +1,5 @@
 ROOMS
+
 GATE_GS_AB : GS_R17, DISCONNECTED : GATE
 GS_S05 : GS_R15 : SHELTER
 GS_S02 : GS_G10 : SHELTER
@@ -71,7 +72,7 @@ GS_G36 : GS_G35
 GS_G38 : DISCONNECTED, GS_G33, GS_G40
 GS_G41 : GS_G42, GS_G44, GS_S03, GS_G43
 GS_G44 : GS_G41, GS_G46
-GS_OR1 : GS_G04, GS_G13, GS_G05
+GS_OR1 : GS_G13, GS_G04, GS_G05
 GS_S03 : GS_G41 : SHELTER
 GS_G43 : GS_G41, GS_G39
 GS_G42 : DISCONNECTED, GS_G41
@@ -81,23 +82,42 @@ GS_G45 : DISCONNECTED, GS_G40
 GS_S04 : DISCONNECTED
 GS_G46 : DISCONNECTED, GS_G44
 GS_M02 : DISCONNECTED, DISCONNECTED
+GS_M04 : DISCONNECTED
 END ROOMS
 CREATURES
 
-//all
 OFFSCREEN : 0-FlyingBigEel-2
 GS_G11 : 2-TentaclePlant
-//white
-
-//white and yellow
-
-//yellow
-
-//red
-
-//white and red
-
+GS_R16 : 2-Centiwing
+GS_R09 : 3-YellowLizard, 4-YellowLizard
+GS_R07 : 2-Centiwing
+GS_R15 : 4-EggBug
+GS_R10 : 2-DropBug
+GS_G23 : 3-YellowLizard
+GS_G22 : 2-PoleMimic, 3-WhiteLizard
+GS_G17 : 4-BigSpider
+GS_R04 : 3-BigSpider
+GS_R08 : 4-PinkLizard
+GS_R14 : 2-Centiwing
+GS_A06 : 4-Centiwing, 3-BlueLizard
+GS_G01 : 5-Centiwing
+GS_G08 : 2-WhiteLizard
+GS_G24 : 2-Centipede
+LINEAGE : GS_G24 : 2 : BigSpider-0.5, SmallCentipede-1
+GS_G05 : 5-DropBug, 6-PoleMimic
+GS_G10 : 6-SmallCentipede, 7-Centipede
+GS_G07 : 4-SmallCentipede
+GS_G25 : 3-CyanLizard
+GS_OR1 : 5-YellowLizard, 4-YellowLizard, 4-YellowLizard
+GS_R13 : 2-DropBug
+GS_G21 : 3-YellowLizard
+GS_G35 : 5-BlueLizard
+GS_G39 : 3-EggBug, 2-DropBug
+GS_G13 : 3-Centiwing
+GS_G46 : 2-WhiteLizard
+GS_G42 : 2-PinkLizard
+GS_G40 : 3-YellowLizard
+GS_A05 : 3-CyanLizard
+GS_A04 : 2-CyanLizard
+GS_G33 : 4-Centiwing
 END CREATURES
-
-BAT MIGRATION BLOCKAGES
-END BAT MIGRATION BLOCKAGES
