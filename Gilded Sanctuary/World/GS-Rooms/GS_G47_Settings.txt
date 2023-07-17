@@ -1,0 +1,19 @@
+DangerType: Rain
+CeilingDrips: 0
+RainIntensity: 0.25
+RumbleIntensity: 0.25
+WaveSpeed: 0.5
+WaveLength: 1
+WaveAmplitude: 0
+SecondWaveLength: 0.1666667
+SecondWaveAmplitude: 0
+Clouds: 0.1086956
+Grime: 0
+Palette: 149
+EffectColorA: 9
+EffectColorB: 13
+Effects: LightBurn-0.05434782-293-236, Flies-0-30-30, ZeroG-0.3804348-44-88, AboveCloudsView-1-330-104, SkyBloom-0.1086956-324-172, 
+PlacedObjects: CustomDecal><173.0923><156.8226><145~572~2013~578~1979~-192~-170~-322~0~1~0~gs_goldrust~0.3152174~1~0.3152174~1~0.3152174~1~0.3152174~1, CustomDecal><176.0535><165.6927><109~574~2003~572~1764~-148~74~-451~0~1~0~rf_sand~0.2608696~1~0.2608696~1~0.2608696~1~0.2608696~1, CustomDecal><113.9469><188.7852><38~504~709~556~428~-224~-285~62~0~1~0~rf_sand~0.2717391~1~0.2717391~1~0.2717391~1~0.2717391~1, CustomDecal><311.3669><708.8377><-179~-488~287~-690~361~134~-336~-335~0~1~0~gs_goldrust~0.2391304~1~0.2391304~1~0.2391304~1~0.2391304~1, InsectGroup><350.9316><292.6879><122~-58~-11~-120~Moth~0.08695652, LightSource><291.7291><283.1989><0.1304348~Environment~204~-149~-50~-250.3975~0~1~None~0~0, LightSource><1563.592><717.1231><0.1521739~Environment~-1469~4~-228~-166.3975~1~1~None~0~0, LightSource><610.3904><408.4173><0.09782609~Environment~-173~83~-247~-174.3974~1~1~None~0~0, 
+FadePalette: 148, 0.08695652, 0.08695652
+BackgroundOffset: 0,185
+BackgroundType: atc_default_msc
