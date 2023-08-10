@@ -1,3 +1,5 @@
+Template: NONE
+DangerType: None
 Grime: 0.2173913
 Palette: 149
 EffectColorA: 9

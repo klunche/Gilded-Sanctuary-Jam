@@ -1,0 +1,7 @@
+Template: NONE
+Palette: 149
+Effects: AboveCloudsView-0.5108696-20-20, 
+PlacedObjects: CGGateCustomization><-38.30872><213.4417><100~50~False~False~False~False~486, 
+FadePalette: 154, 0.2717391
+BackgroundOffset: 5000,5000
+BackgroundType: atc_default_vanilla

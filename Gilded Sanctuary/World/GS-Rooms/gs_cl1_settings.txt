@@ -1,0 +1,15 @@
+Template: NONE
+DangerType: None
+WaveSpeed: 0.5
+WaveLength: 0.75
+WaveAmplitude: 0.04999913
+SecondWaveLength: 0.1666667
+SecondWaveAmplitude: 0
+Clouds: 0.08695652
+Grime: 0.2065217
+Palette: 149
+EffectColorB: 15
+Effects: ZeroG-0.3804348-20-20, AboveCloudsView-1-30-30, GRJGoldenFlakes-0.06521739-40-40, LightBurn-0.05434782-50-50, 
+PlacedObjects: CustomDecal><-38.08279><141.4321><-252~540~1064~584~968~-166~-673~-125~0~1~0~gs_goldrust~0.2608696~1~0.2608696~1~0.2608696~1~0.2608696~1, CustomDecal><-370.3012><252.772><5~710~930~40~722~-326~-73~-79~0~1~0~rf_sand~0.173913~1~0.173913~1~0.173913~1~0.173913~1, CustomDecal><800.249><27.8><-53~713~1349~734~1306~-52~395~-70.00002~0~1~0~gs_goldrust~0.2282609~1~0.2282609~1~0.2282609~1~0.2282609~1, CustomDecal><1940.089><19.42924><-10~611~1079~779~664~-76~677~-302~0~1~0~gs_goldrust~0.2065217~1~0.2065217~1~0.2065217~1~0.2065217~1, 
+FadePalette: 154, 0.1847826, 0.1847826, 0.1847826
+WetTerrain: OFF
