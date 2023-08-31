@@ -1,29 +1,51 @@
 ﻿using Fisobs.Creatures;
 using Fisobs.Core;
-using System.Collections.Generic;
 using Fisobs.Sandbox;
 using static PathCost.Legality;
 using UnityEngine;
-using System;
+using System.Collections.Generic;
+using RWCustom;
+using DevInterface;
 
 namespace GoldenRegionJam;
 
 sealed class FlyingBigEelCritob : Critob
 {
-    internal FlyingBigEelCritob() : base(EnumExt_GoldenRegionJam.FlyingBigEel)
+    internal FlyingBigEelCritob() : base(CreatureTemplateType.FlyingBigEel)
     {
         Icon = new SimpleIcon("Kill_BigEel", RainWorld.GoldRGB + new Color(.2f, .2f, .2f));
-        RegisterUnlock(KillScore.Constant(100), EnumExt_GoldenRegionJam.FlyingBigEelUnlock);
+        SandboxPerformanceCost = new(4f, 1.2f);
+        LoadedPerformanceCost = 300f;
+        RegisterUnlock(KillScore.Configurable(25), SandboxUnlockID.FlyingBigEel);
         Hooks.Apply();
     }
 
-    public override IEnumerable<CreatureTemplate> GetTemplates()
+    public override IEnumerable<RoomAttractivenessPanel.Category> DevtoolsRoomAttraction() => new[]
     {
-        var t = new CreatureFormula(this, "FlyingBigEel") {
-            TileResistances = new() {
+        RoomAttractivenessPanel.Category.Flying,
+        RoomAttractivenessPanel.Category.LikesOutside
+    };
+
+    public override int ExpeditionScore() => 25;
+
+    public override Color DevtoolsMapColor(AbstractCreature acrit) => RainWorld.GoldRGB + new Color(.2f, .2f, .2f);
+
+    public override string DevtoolsMapName(AbstractCreature acrit) => "FlEel";
+
+    public override void TileIsAllowed(AImap map, IntVector2 tilePos, ref bool? allow) => allow = map.getAItile(tilePos).terrainProximity > 4;
+
+    public override IEnumerable<string> WorldFileAliases() => new[] { "flyingleviathan", "flyinglev", "flyingbigeel" };
+
+    public override CreatureTemplate CreateTemplate()
+    {
+        var t = new CreatureFormula(CreatureTemplate.Type.BigEel, Type, "FlyingBigEel") 
+        {
+            TileResistances = new() 
+            {
                 Air = new(1f, Allowed)
             },
-            ConnectionResistances = new() {
+            ConnectionResistances = new() 
+            {
                 Standard = new(1f, Allowed),
                 OutsideRoom = new(1f, Allowed),
                 SkyHighway = new(100000f, Allowed),
@@ -51,13 +73,15 @@ sealed class FlyingBigEelCritob : Critob
         t.communityID = CreatureCommunities.CommunityID.None;
         t.waterRelationship = CreatureTemplate.WaterRelationship.AirOnly;
         t.canFly = true;
-        yield return t;
+        t.canSwim = false;
+        return t;
     }
 
     public override void EstablishRelationships()
     {
-        Relationships b = new(EnumExt_GoldenRegionJam.FlyingBigEel);
-        for (var i = 0; i < Enum.GetValues(typeof(CreatureTemplate.Type)).Length; i++) b.FearedBy((CreatureTemplate.Type)i, 1f);
+        var b = new Relationships(CreatureTemplateType.FlyingBigEel);
+        for (var i = 0; i < CreatureTemplate.Type.values.entries.Count; i++)
+            b.FearedBy(new CreatureTemplate.Type(CreatureTemplate.Type.values.entries[i]), 1f);
         b.IgnoredBy(CreatureTemplate.Type.TempleGuard);
         b.IgnoredBy(CreatureTemplate.Type.GarbageWorm);
         b.IgnoredBy(CreatureTemplate.Type.Leech);
@@ -81,21 +105,16 @@ sealed class FlyingBigEelCritob : Critob
         b.Ignores(CreatureTemplate.Type.TentaclePlant);
         b.Ignores(CreatureTemplate.Type.PoleMimic);
         b.Ignores(CreatureTemplate.Type.Overseer);
-        b.Ignores(EnumExt_GoldenRegionJam.FlyingBigEel);
+        b.Ignores(Type);
     }
 
-    public override ArtificialIntelligence GetRealizedAI(AbstractCreature acrit) => new BigEelAI(acrit, acrit.world);
+    public override ArtificialIntelligence CreateRealizedAI(AbstractCreature acrit) => new BigEelAI(acrit, acrit.world);
 
-    public override Creature GetRealizedCreature(AbstractCreature acrit) => new BigEel(acrit, acrit.world);
+    public override Creature CreateRealizedCreature(AbstractCreature acrit) => new BigEel(acrit, acrit.world);
 
-    public override AbstractCreatureAI GetAbstractAI(AbstractCreature acrit) => new BigEelAbstractAI(acrit.world, acrit);
+    public override AbstractCreatureAI CreateAbstractAI(AbstractCreature acrit) => new BigEelAbstractAI(acrit.world, acrit);
 
-    public override void LoadResources(RainWorld rainWorld)
-    {
-        string[] sprAr = { "FEelJaw1A", "FEelJaw1B", "FEelJaw2A", "FEelJaw2B"};
-        foreach (var spr in sprAr) 
-            Ext.LoadAtlasFromEmbRes(GetType().Assembly, spr);
-    }
+    public override void LoadResources(RainWorld rainWorld) { }
 
-    public override CreatureTemplate.Type? ArenaFallback(CreatureTemplate.Type type) => CreatureTemplate.Type.BigEel;
+    public override CreatureTemplate.Type? ArenaFallback() => CreatureTemplate.Type.BigEel;
 }

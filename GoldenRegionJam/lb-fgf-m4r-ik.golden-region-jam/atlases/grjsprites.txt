@@ -1,0 +1,44 @@
+{"frames": {
+
+"FEelJaw1A.png":
+{
+	"frame": {"x":2,"y":2,"w":50,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":100},
+	"sourceSize": {"w":50,"h":100}
+},
+"FEelJaw1B.png":
+{
+	"frame": {"x":54,"y":2,"w":50,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":100},
+	"sourceSize": {"w":50,"h":100}
+},
+"FEelJaw2A.png":
+{
+	"frame": {"x":2,"y":104,"w":50,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":100},
+	"sourceSize": {"w":50,"h":100}
+},
+"FEelJaw2B.png":
+{
+	"frame": {"x":54,"y":104,"w":50,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":100},
+	"sourceSize": {"w":50,"h":100}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "grjsprites.png",
+	"format": "RGBA8888",
+	"size": {"w":106,"h":206},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:816d3171dadaa79bbed697891b18c19d:8c558f577e47fd618bd1b4debc8719a9:f19682839e91f1808ee4419a6a55905f$"
+}
+}

@@ -6,21 +6,20 @@ namespace GoldenRegionJam;
 
 internal sealed class GoldFlakesEffect : UpdatableAndDeletable
 {
-	readonly List<GoldFlake> flakes;
+	readonly List<GoldFlake> flakes = new();
 	int savedCamPos = -1;
 
 	internal GoldFlakesEffect(Room room)
 	{
 		this.room = room;
 		var num = 0f;
-		if (room?.roomSettings is not null)
+		if (room?.roomSettings is RoomSettings rs)
 		{
 			for (var i = 0; i < room.cameraPositions.Length; i++) 
-				num = room.roomSettings.GetEffectAmount(EnumExt_GoldenRegionJam.GRJGoldenFlakes);
-			flakes = new();
+				num = rs.GetEffectAmount(RoomEffectType.GRJGoldenFlakes);
 			for (var j = 0; j < NumberOfFlakes(num); j++)
 			{
-				GoldFlake lGoldFlake = new();
+				var lGoldFlake = new GoldFlake();
 				flakes.Add(lGoldFlake);
 				room.AddObject(lGoldFlake);
 			}
@@ -30,24 +29,25 @@ internal sealed class GoldFlakesEffect : UpdatableAndDeletable
 	public override void Update(bool eu)
 	{
 		base.Update(eu);
-		if (room?.roomSettings is not null)
+		if (room?.roomSettings is RoomSettings rs)
 		{
 			var rCam = room.game.cameras[0];
-			if (rCam.room == room && rCam.currentCameraPosition != savedCamPos)
+			if (rCam.currentCameraPosition != savedCamPos)
 			{
 				savedCamPos = rCam.currentCameraPosition;
-				var num2 = NumberOfFlakes(room.roomSettings.GetEffectAmount(EnumExt_GoldenRegionJam.GRJGoldenFlakes));
+				var num2 = NumberOfFlakes(rs.GetEffectAmount(RoomEffectType.GRJGoldenFlakes));
 				for (var i2 = 0; i2 < flakes.Count; i2++)
 				{
-					if (i2 <= num2)
+					var f = flakes[i2];
+                    if (i2 <= num2)
 					{
-						flakes[i2].active = true;
-						flakes[i2].PlaceRandomlyInRoom();
-						flakes[i2].savedCamPos = savedCamPos;
-						flakes[i2].reset = false;
+						f.active = true;
+						f.PlaceRandomlyInRoom();
+						f.savedCamPos = savedCamPos;
+						f.reset = false;
 					}
 					else 
-						flakes[i2].active = false;
+						f.active = false;
 				}
 			}
 			if (!room.BeingViewed)
@@ -89,6 +89,8 @@ internal sealed class GoldFlakesEffect : UpdatableAndDeletable
 				return;
 			}
 			base.Update(eu);
+			if (room is null)
+				return;
 			var rCam = room.game.cameras[0];
 			vel *= .82f;
 			vel.y -= .25f;
@@ -130,7 +132,7 @@ internal sealed class GoldFlakesEffect : UpdatableAndDeletable
 		internal void PlaceRandomlyInRoom()
 		{
 			ResetMe();
-			pos = room.game.cameras[0].pos + new Vector2(Mathf.Lerp(-20f, 1386f, Random.value), Mathf.Lerp(-200f, 968f, Random.value));
+			pos = (room?.game.cameras[0].pos ?? Vector2.zero) + new Vector2(Mathf.Lerp(-20f, 1386f, Random.value), Mathf.Lerp(-200f, 968f, Random.value));
 			lastPos = pos;
 		}
 
@@ -153,10 +155,9 @@ internal sealed class GoldFlakesEffect : UpdatableAndDeletable
 			AddToContainer(sLeaser, rCam, null);
 		}
 
-		public override void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer newContatiner)
+		public override void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer? newContatiner)
 		{
-			if (newContatiner is null) 
-				newContatiner = rCam.ReturnFContainer("Background");
+			newContatiner ??= rCam.ReturnFContainer("Background");
 			foreach (var s in sLeaser.sprites)
 			{
 				s.RemoveFromContainer();
