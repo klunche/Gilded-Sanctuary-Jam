@@ -1,0 +1,19 @@
+Template: NONE
+DangerType: Blizzard
+CeilingDrips: 0
+RainIntensity: 0.09387472
+RumbleIntensity: 0.2608696
+WaveSpeed: 0.499854
+WaveLength: 0.9764583
+WaveAmplitude: 0.004693734
+SecondWaveLength: 1
+SecondWaveAmplitude: 0.0001
+Clouds: 0.4456522
+Grime: 0.09782609
+Palette: 148
+EffectColorA: 14
+Effects: LightBurn-0.07608695-20-20, GRJGoldenFlakes-0.08695652-21-90, ZeroG-0.09782609-289-15, SandStorm-0-32.84583-49.91111, 
+PlacedObjects: CustomDecal><306.2325><199.3008><106~753~1365~681~1350~-3~-273~-26~0~1~0.2717391~RF_Sand~0.2391304~1~0.3043478~1~0.2282609~1~0.1195652~1, LightSource><1301.332><552.8579><0.0326087~Environment~-1325~551~-183~-162.3975~1~1~None~0~0, CustomDecal><-30.91351><111.6152><-95~720~932~766~1139~-36~539.9999~198~0~1~0~RF_Sand~0.7717391~1~0.1521739~1~0.1521739~1~0.1521739~1, LightSource><1153.349><654.326><0~EffectColor1~-1290~-708~-496~-91.39746~1~1~None~0~0, LightSource><1309.318><484.3327><0.02173913~Environment~-772~-301~-509~-68.39746~1~1~None~0~0, LightSource><-41.32703><700.9346><0.06521739~Environment~768~-315~67~-155.3975~1~1~None~0~0, PlacedPearlChain><423.314><251.3235><90~-156~6~9~4~4, PlacedPearlChain><400.5201><293.449><-221~78~2~3~0~0, SnowSource><640.3023><310.6188><None~856.5958~179.6445~50~86.60254~0.3194746~0.9125214, 
+FadePalette: 149, 0.3043478
+WetTerrain: OFF
+MorePalette0: 0, 0.1391986

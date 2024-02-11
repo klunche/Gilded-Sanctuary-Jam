@@ -1,4 +1,4 @@
-Template: NONE
+Template: GS_SettingsTemplate_Inside
 DangerType: None
 Clouds: 0.2034763
 Grime: 0
@@ -7,4 +7,5 @@ EffectColorA: 9
 EffectColorB: 13
 Effects: ZeroG-0.3369565-20-20, 
 PlacedObjects: LightSource><2501.746><289.8547><0.1029438~Environment~70.43433~365.374~50~86.60254~1~1~None~0~0, LightSource><2177.447><486.0013><0.08747731~Environment~204.9~72.9646~50~86.60254~1~1~None~0~0, LightSource><2191.21><214.4575><0.1029444~Environment~51.93643~334.0698~50~86.60254~1~1~None~0~0, LightSource><393.9915><413.8114><0.09520954~Environment~-306.6385~-6.71875~50~86.60254~1~1~None~0~0, LightSource><855.4352><341.7466><0.09520954~Environment~145.849~262.924~-282.9625~-269.8381~1~1~None~0~0, LightSource><1352.792><453.7211><0.1029431~Environment~308.7729~-21.65942~50~86.60254~1~1~None~0~0, LightSource><1525.925><167.348><0.1029438~Environment~26.32397~257.2323~50~86.60254~1~1~None~0~0, 
+AmbientSounds: SPOT><so_ind-hvac.ogg><733.871><387.4029><0.1847826><1><664.871><511.4028><-74.35535><-36.35535><0><0.1217393, 
 FadePalette: 149, 0.5026608, 0.502661, 0.5026608

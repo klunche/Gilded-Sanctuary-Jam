@@ -1,0 +1,11 @@
+priming : true
+(Red)priming : false
+(Saint)priming : saint
+size : 1.5
+#These tags determine the minimum required karma and the minimum required karma cap for the Echo to spawn. Lowest karma value is 1. Settings minkarma to -1 will set the karma requirement relative to the karma cap. See the wiki on how the base game does that.
+minkarma : 3
+minkarmacap : 1
+radius : 4
+echosong : X(2)
+room : GS_G32
+defaultflip : 1

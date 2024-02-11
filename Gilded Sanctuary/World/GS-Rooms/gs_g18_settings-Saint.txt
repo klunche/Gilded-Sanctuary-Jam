@@ -1,0 +1,21 @@
+Template: NONE
+DangerType: Thunder
+CeilingDrips: 0
+RainIntensity: 0.07608695
+RumbleIntensity: 0.07608695
+WaveSpeed: 0.51
+WaveLength: 1
+WaveAmplitude: 0.0001
+SecondWaveLength: 1
+SecondWaveAmplitude: 0.0001
+Clouds: 0.5108696
+Grime: 0.1086956
+Palette: 148
+EffectColorA: 3
+EffectColorB: 15
+Effects: LightBurn-0.07608695-20-20, ZeroG-0.1304348-30-30, SandStorm-0-40-40, 
+PlacedObjects: CustomDecal><438.2089><184.4458><-6~249~128~221~122~-63~-863~-123~0~1~0~GS_GoldRust~0.2934783~1~0.2934783~1~0.2934783~1~0.2934783~1, CustomDecal><154.3026><11.71767><-34~639~656~670~701~-35~0~0~0~1~0~RF_Sand~0.2065217~1~0.2065217~1~0.2065217~1~0.2065217~1, LightSource><492.9431><333.4418><0.08695652~Environment~48~198~167~92.60254~1~1~None~0~0, 
+FadePalette: 149, 0.06521739
+WetTerrain: OFF
+MorePalette0: 30, 0.07608695
+MorePalette1: 0, 0.1413043

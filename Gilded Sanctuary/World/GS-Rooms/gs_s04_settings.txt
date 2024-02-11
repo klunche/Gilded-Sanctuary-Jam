@@ -1,6 +1,8 @@
+Template: GS_SettingsTemplate_Innerupper
 Clouds: 0.3152174
 Grime: 0
 Palette: 148
 EffectColorA: 9
 Effects: ZeroG-0.4130435-20-20, LightBurn-0.3695652-30-30, 
+AmbientSounds: OMNI><so_ind-hvac.ogg><739.0948><385.1261><0.2826087><0.7065217, 
 FadePalette: 149, 0.6086956

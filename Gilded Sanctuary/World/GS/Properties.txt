@@ -1,4 +1,18 @@
+Palette: 149
+batDepleteCyclesMin: 2
+batDepleteCyclesMax: 7
+batDepleteCyclesMaxIfLessThanTwoLeft: 3
+batDepleteCyclesMaxIfLessThanFiveLeft: 4
+overseersSpawnChance: 0.0
+overseersMin: 0
+overseersMax: 0
+Subregion: Gilded Sanctuary
+Subregion: Tangled Steeple
+playerGuideOverseerSpawnChance: 0.0
+Broken Shelters:
+Room Setting Templates: Gilderd, Inside, Innerupper
 Room_Attr: GATE_GS_AB: Centiwing-Forbidden,FlyingBigEel-Forbidden,
+Room_Attr: GATE_GS_TM: StandardGroundCreature-Forbidden,Slugcat-Forbidden,LizardTemplate-Forbidden,PinkLizard-Forbidden,GreenLizard-Forbidden,BlueLizard-Forbidden,YellowLizard-Forbidden,WhiteLizard-Forbidden,RedLizard-Forbidden,BlackLizard-Forbidden,Salamander-Forbidden,CyanLizard-Forbidden,Fly-Forbidden,Leech-Forbidden,SeaLeech-Forbidden,Snail-Forbidden,Vulture-Forbidden,GarbageWorm-Forbidden,LanternMouse-Forbidden,CicadaA-Forbidden,CicadaB-Forbidden,Spider-Forbidden,JetFish-Forbidden,BigEel-Forbidden,Deer-Forbidden,TubeWorm-Forbidden,DaddyLongLegs-Forbidden,BrotherLongLegs-Forbidden,TentaclePlant-Forbidden,PoleMimic-Forbidden,MirosBird-Forbidden,TempleGuard-Forbidden,Centipede-Forbidden,RedCentipede-Forbidden,Centiwing-Forbidden,SmallCentipede-Forbidden,Scavenger-Forbidden,Overseer-Forbidden,VultureGrub-Forbidden,EggBug-Forbidden,BigSpider-Forbidden,SpitterSpider-Forbidden,SmallNeedleWorm-Forbidden,BigNeedleWorm-Forbidden,DropBug-Forbidden,KingVulture-Forbidden,Hazer-Forbidden,Gecko-Forbidden,MaracaSpider-Forbidden,BabyCroaker-Forbidden,LaserDrone-Forbidden,Sporantula-Forbidden,BouncingBall-Forbidden,Polliwog-Forbidden,FatFireFly-Forbidden,FlyingBigEel-Forbidden,Hoverfly-Forbidden,RedHorrorCenti-Forbidden,HunterSeeker-Forbidden,Scutigera-Forbidden,SurfaceSwimmer-Forbidden,Blizzor-Forbidden,MoleSalamander-Forbidden,SilverLizard-Forbidden,DivingBeetle-Forbidden,WaterBlob-Forbidden,WaterSpitter-Forbidden,Mosquito-Forbidden,MirosVulture-Forbidden,SpitLizard-Forbidden,EelLizard-Forbidden,MotherSpider-Forbidden,TerrorLongLegs-Forbidden,AquaCenti-Forbidden,HunterDaddy-Forbidden,FireBug-Forbidden,StowawayBug-Forbidden,ScavengerElite-Forbidden,Inspector-Forbidden,Yeek-Forbidden,BigJelly-Forbidden,SlugNPC-Forbidden,JungleLeech-Forbidden,ZoopLizard-Forbidden,ScavengerKing-Forbidden,TrainLizard-Forbidden,ReaperLizard-Forbidden,Ancient-Forbidden,Mario-Forbidden,SnootShootNoot-Forbidden,
 Room_Attr: GS_S05: Centipede-Forbidden,Centiwing-Forbidden,SmallCentipede-Forbidden,FlyingBigEel-Forbidden,
 Room_Attr: GS_S02: Centipede-Forbidden,Centiwing-Forbidden,SmallCentipede-Forbidden,FlyingBigEel-Like,
 Room_Attr: GS_S01: Centipede-Forbidden,Centiwing-Forbidden,SmallCentipede-Forbidden,BigSpider-Forbidden,SpitterSpider-Forbidden,FlyingBigEel-Forbidden,
@@ -77,8 +91,9 @@ Room_Attr: GS_G42: Centiwing-Forbidden,FlyingBigEel-Like,
 Room_Attr: GS_G39: Centiwing-Forbidden,FlyingBigEel-Like,
 Room_Attr: GS_G40: Centipede-Like,Centiwing-Forbidden,SmallCentipede-Like,FlyingBigEel-Like,
 Room_Attr: GS_G45: Centipede-Like,Centiwing-Forbidden,SmallCentipede-Like,FlyingBigEel-Like,
-Room_Attr: GS_S04: Centiwing-Forbidden,BigSpider-Forbidden,SpitterSpider-Forbidden,FlyingBigEel-Like,
 Room_Attr: GS_G46: Centiwing-Like,FlyingBigEel-Like,
 Room_Attr: GS_M02: FlyingBigEel-Like,
 Room_Attr: GS_M04: FlyingBigEel-Like,
+Room_Attr: GS_S04: Centiwing-Forbidden,BigSpider-Forbidden,SpitterSpider-Forbidden,FlyingBigEel-Like,
+Room_Attr: GS_M09: StandardGroundCreature-Forbidden,Slugcat-Forbidden,LizardTemplate-Forbidden,PinkLizard-Forbidden,GreenLizard-Forbidden,BlueLizard-Forbidden,YellowLizard-Forbidden,WhiteLizard-Forbidden,RedLizard-Forbidden,BlackLizard-Forbidden,Salamander-Forbidden,CyanLizard-Forbidden,Fly-Forbidden,Leech-Forbidden,SeaLeech-Forbidden,Snail-Forbidden,Vulture-Forbidden,GarbageWorm-Forbidden,LanternMouse-Forbidden,CicadaA-Forbidden,CicadaB-Forbidden,Spider-Forbidden,JetFish-Forbidden,BigEel-Forbidden,Deer-Forbidden,TubeWorm-Forbidden,DaddyLongLegs-Forbidden,BrotherLongLegs-Forbidden,TentaclePlant-Forbidden,PoleMimic-Forbidden,MirosBird-Forbidden,TempleGuard-Forbidden,Centipede-Forbidden,RedCentipede-Forbidden,Centiwing-Forbidden,SmallCentipede-Forbidden,Scavenger-Forbidden,Overseer-Forbidden,VultureGrub-Forbidden,EggBug-Forbidden,BigSpider-Forbidden,SpitterSpider-Forbidden,SmallNeedleWorm-Forbidden,BigNeedleWorm-Forbidden,DropBug-Forbidden,KingVulture-Forbidden,Hazer-Forbidden,Gecko-Forbidden,MaracaSpider-Forbidden,BabyCroaker-Forbidden,LaserDrone-Forbidden,Sporantula-Forbidden,BouncingBall-Forbidden,Polliwog-Forbidden,FatFireFly-Forbidden,FlyingBigEel-Forbidden,Hoverfly-Forbidden,RedHorrorCenti-Forbidden,HunterSeeker-Forbidden,Scutigera-Forbidden,SurfaceSwimmer-Forbidden,Blizzor-Forbidden,MoleSalamander-Forbidden,SilverLizard-Forbidden,DivingBeetle-Forbidden,WaterBlob-Forbidden,WaterSpitter-Forbidden,Mosquito-Forbidden,MirosVulture-Forbidden,SpitLizard-Forbidden,EelLizard-Forbidden,MotherSpider-Forbidden,TerrorLongLegs-Forbidden,AquaCenti-Forbidden,HunterDaddy-Forbidden,FireBug-Forbidden,StowawayBug-Forbidden,ScavengerElite-Forbidden,Inspector-Forbidden,Yeek-Forbidden,BigJelly-Forbidden,SlugNPC-Forbidden,JungleLeech-Forbidden,ZoopLizard-Forbidden,ScavengerKing-Forbidden,TrainLizard-Forbidden,ReaperLizard-Forbidden,Ancient-Forbidden,Mario-Forbidden,SnootShootNoot-Forbidden,
 Room_Attr: OffScreenDen_GS: FlyingBigEel-Like,

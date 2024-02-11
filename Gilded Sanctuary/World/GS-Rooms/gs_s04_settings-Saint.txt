@@ -1,0 +1,16 @@
+Template: NONE
+CeilingDrips: 0
+WaveSpeed: 0.51
+WaveLength: 1
+WaveAmplitude: 0.0001
+SecondWaveLength: 1
+SecondWaveAmplitude: 0.0001
+Clouds: 0.3152174
+Grime: 0
+Palette: 148
+EffectColorA: 9
+Effects: ZeroG-0.4130435-20-20, LightBurn-0.3695652-30-30, 
+FadePalette: 149, 0.6086956
+WetTerrain: OFF
+MorePalette0: 30, 0.2087979
+MorePalette1: 40, 0.07733221

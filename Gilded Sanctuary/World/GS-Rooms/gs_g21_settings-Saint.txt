@@ -1,0 +1,21 @@
+Template: NONE
+DangerType: None
+CeilingDrips: 0
+RainIntensity: 0.07608695
+RumbleIntensity: 0.1195652
+WaveSpeed: 0.5000938
+WaveLength: 0.9999532
+WaveAmplitude: 0.0004234365
+SecondWaveLength: 1
+SecondWaveAmplitude: 0.0001
+Clouds: 0.1521739
+Grime: 0.09782609
+Palette: 148
+EffectColorA: 13
+EffectColorB: 14
+Effects: LightBurn-0.04347826-20-20, ZeroG-0.1630435-30-30, SandStorm-0-40-40, 
+PlacedObjects: LightSource><450.3005><348.7362><0.06521739~Environment~-438~360~50~86.60254~1~1~None~0~0, CustomDecal><66.0816><228.0674><23~459~740~473~773~35~-253~80~0~1~0.3695652~GS_GoldRust~0.1847826~1~0.1195652~1~0.1847826~1~0.173913~1, CustomDecal><34.56683><-34.83031><-133~287~783~340~781~-17~-262~-4~0~1~0.7826087~GS_GoldRust~0.1630435~1~0.1413043~1~0.25~1~0.07608695~1, LightSource><469.6753><372.3463><0.09782609~Environment~-257~90~50~86.60254~1~1~None~0~0, CustomDecal><316.1036><98.67105><-19~436~336~401~288~-148~-95~-49~0~1~0~GS_GoldRust~0.2282609~1~0.2282609~1~0.2282609~1~0.2282609~1, 
+FadePalette: 149, 0.09782609
+WetTerrain: OFF
+MorePalette0: 0, 0.1195652
+MorePalette1: 30, 0.1086956

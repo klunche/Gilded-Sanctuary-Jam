@@ -1,0 +1,11 @@
+DangerType: None
+Clouds: 0
+Grime: 0.4021739
+Palette: 149
+Effects: AboveCloudsView-0.1413043-20-20, LightBurn-0.04347826-30-30, ZeroG-0.1847826-40-40, GRJGoldenFlakes-0.01086957-60-60, 
+PlacedObjects: LightSource><1298.493><464.3001><0.09782609~Environment~706~149~50~86.60254~0~1~None~0~0, CustomDecal><-206.5974><55.82532><-246~800~765~880~720~-153~-2~-246~0~1~0~rf_sand~0.09782609~1~0.09782609~1~0.09782609~1~0.09782609~1, CustomDecal><76.86768><160.9117><-128~520~398~562~360~-116~0~0~0~1~0~gs_goldrust~0.1956522~0.4021739~0.1956522~0.4021739~0.1956522~0.4021739~0.1956522~0.4021739, LightSource><293.55><571.7496><0.3152174~Environment~577~-25~50~86.60254~0~1~None~0~0, CellDistortion><72.5928><320.3763><866~119~50~86.60254~0.2717389~0.06521741~0~0.01086957, 
+AmbientSounds: OMNI><am_win-medwind.ogg><727.4406><520.6893><0.3586957><1.313043, OMNI><msc-ritualmetal.ogg><728.3798><314.3401><0.06521739><1.273913, 
+Triggers: Spot<tA>event<tB>MusicEvent<eA>songName<eB>hybridize<eA>vol<eB>0.3<eA>prio<eB>0.5<eA>mxThrt<eB>1<eA>loop<eB>0<eA>droneTol<eB>0<eA>rooms<eB>-1<eA>rest<eB>5<eA>fadeIn<eB>0<eA>oneSongPerCycle<eB>0<eA>stopAtDeath<eB>0<eA>stopAtGate<eB>0<tA>multiUse<tB>0<tA>toCycle<tB>-1<tA>fromCycle<tB>0<tA>delay<tB>0<tA>panPos<tB>721.9918<tB>219.0502<tA>fireChance<tB>1<tA>entrance<tB>0<tA>karma<tB>0<tA>slugcats<tB><tA>pos<tB>415.9918<tB>360.0502<tA>handlePos<tB>-172.3553<tB>-21.35535, 
+FadePalette: 19, 0.2717391, 0.5652174
+MorePalette0: 28, 0.3152174, 0.2826087
+BackgroundOffset: 0,217.3913

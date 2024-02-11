@@ -1,7 +1,10 @@
+Template: GS_SettingsTemplate_Innerupper
 Clouds: 0.1521739
 Grime: 0.2065217
 Palette: 148
 EffectColorA: 9
 EffectColorB: 21
-Effects: AboveCloudsView-1-20-20, LightBurn-0.1086956-30-30, ZeroG-0.4021739-40-40, 
+Effects: AboveCloudsView-1-20-20, LightBurn-0.1086956-30-30, ZeroG-0.4021739-40-40, GRJGoldenFlakes-0.1086956-50-50, 
+PlacedObjects: CellDistortion><865.731><319.6991><-866~-43~50~86.60254~0.2173913~0.08695652~0~0.01086957, 
+AmbientSounds: SPOT><so_ind-generator.ogg><734.0021><432.05><0.3369565><1><765.0021><194.05><-101.3553><-46.35535><0><0.1217393, 
 FadePalette: 149, 0.5, 0.5

@@ -1,0 +1,18 @@
+Template: NONE
+DangerType: None
+CeilingDrips: 0
+RainIntensity: 0.1068046
+RumbleIntensity: 0.01086957
+WaveSpeed: 0.4998532
+WaveLength: 0.9999266
+WaveAmplitude: 0.001870822
+SecondWaveLength: 1
+SecondWaveAmplitude: 0.0001
+Clouds: 0.1521739
+Grime: 0.1521739
+Palette: 149
+Effects: AboveCloudsView-1-90-121, Fog-0.6521739-26-86, ZeroG-0.3478261-20-20, 
+PlacedObjects: CustomDecal><76.67365><-30.93484><-105~745~1023~761~891~-7~-134~190~0.1086956~0.2065217~0~BlackRust1~0.3695652~1~0.3695652~1~0.3695652~1~0.3695652~1, CustomDecal><-30.9104><0.6194763><-58~740~1236~747~1254~-26~315~52~0.09782609~1~0~GreyBones~0.3369565~1~0.3369565~1~0.3369565~1~0.3369565~1, LightBeam><188.3891><-2.643707><188~752~521~747~828~-21~224~436~0.06304335~0~0~1~None~0~0, CustomDecal><120.2512><376.95><10~359~845~334~837~-1~122~-475~0~1~0~BlackRust1~0.5~0~0.5~0~0.5~0~0.5~0, 
+FadePalette: 148, 0.1847826
+WetTerrain: OFF
+MorePalette0: 40, 0.08695652

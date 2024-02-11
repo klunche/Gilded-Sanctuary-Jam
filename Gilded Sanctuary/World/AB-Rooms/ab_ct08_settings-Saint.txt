@@ -1,0 +1,17 @@
+Template: AB_SettingsTemplate_SurfaceSands
+CeilingDrips: 0
+WaveSpeed: 0.5251888
+WaveLength: 0.9274563
+WaveAmplitude: 0.01495083
+SecondWaveLength: 1
+SecondWaveAmplitude: 0.0001
+Clouds: 0.1000001
+Grime: 0.3369565
+Palette: 0
+EffectColorA: 3
+EffectColorB: 13
+Effects: Bloom-0.3015963-278-293, 
+PlacedObjects: LightSource><207.808><532.8058><0.6521739~Environment~813~-558~679~-644.3975~1~1~None~0~0, InsectGroup><621.9497><395.9899><32~-107~-280~-505~TinyDragonFly~0.1413043, NoSpearStickZone><985.2831><569.9472><104~132, DataPearl><467.9495><228.9858><-877~261~0~0~Misc2~0, CustomDecal><84.51813><-55.19919><27~773~1164~771~1162~0~-502~-279~0~1~0~GreyBones~0.1086956~1~0.1086956~1~0.1086956~1~0.1086956~1, CustomDecal><829.6995><199.7646><22~650~624~680~594~-23~-1211~-538~0.08695652~1~0~BlackRust1~1~1~1~1~1~1~1~1, LightSource><565.9068><718.3741><1~Environment~-507~251~352.9999~-831.3975~1~1~None~0~0, SnowSource><775.902><221.0757><None~-590~155~50~86.60254~0.2934783~0.06521739, SnowSource><1160.145><186.8874><UnSnow~-12~260~-360~-30.39746~0.1413043~0.3478261, 
+AmbientSounds: SPOT><AM_ENV-NatWind.ogg><773.8223><112.3417><0.4021739><1><44.82227><523.3417><650.6447><-296.3553><0><1, 
+FadePalette: 3, 0.4891304
+WetTerrain: OFF

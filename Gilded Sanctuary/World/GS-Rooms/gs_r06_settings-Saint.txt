@@ -1,0 +1,20 @@
+Template: NONE
+DangerType: Blizzard
+CeilingDrips: 0
+RainIntensity: 0.08111406
+RumbleIntensity: 0.1630435
+WaveSpeed: 0.5000954
+WaveLength: 0.9999523
+WaveAmplitude: 6.66561E-09
+SecondWaveLength: 1
+SecondWaveAmplitude: 0.0001
+Clouds: 0.823682
+Grime: 0
+Palette: 148
+EffectColorA: 0
+EffectColorB: 13
+Effects: GRJGoldenFlakes-0.1413043-20-20, LightBurn-0.04347826-30-30, ZeroG-0.1304348-40-40, SandStorm-0-69.20938-99.77778, 
+PlacedObjects: LightSource><780.0371><69.68513><0.2297695~Environment~-735.0787~694.21~50~86.60254~1~1~None~0~0, LightSource><899.7275><1029.552><0.1086956~Environment~-718~-198~50~86.60254~1~1~None~0~0, LightSource><-39.84857><1056.326><0.09782609~Environment~451~18~73~17.60254~1~1~None~0~0, SnowSource><389.6937><668.9053><None~497.1312~-597.8667~-73.79376~-180.7752~0.2189431~0.5258597, SnowSource><1002.696><1166.558><Radial~133~274~-397~47.60254~0.2717391~0.2391304, SnowSource><-157.4285><1121.063><Radial~226~168~50~86.60254~0.2391304~0.2282609, 
+FadePalette: 149, 0.1392394, 0.1501088
+WetTerrain: OFF
+MorePalette0: 0, 0.07733287, 0.09279931

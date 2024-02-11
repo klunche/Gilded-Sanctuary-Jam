@@ -1,7 +1,10 @@
+Template: GS_SettingsTemplate_Inside
+DangerType: None
 Clouds: 0.2065217
 Grime: 0.2065217
 Palette: 148
 EffectColorA: 9
 EffectColorB: 15
-Effects: ZeroG-0.3804348-20-20, LightBurn-0.1195652-30-30, AboveCloudsView-1-40-40, 
+Effects: ZeroG-0.3804348-20-20, LightBurn-0.1195652-30-30, AboveCloudsView-1-40-40, GRJGoldenFlakes-0.1195652-50-50, 
+PlacedObjects: CellDistortion><457.8141><340.6105><-582~-61~50~86.60254~0.2173913~0.07608695~0~0.01086957, 
 FadePalette: 149, 0.5

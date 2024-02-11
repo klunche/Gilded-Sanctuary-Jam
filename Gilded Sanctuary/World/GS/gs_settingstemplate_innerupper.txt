@@ -1,0 +1,20 @@
+DangerType: None
+CeilingDrips: 0
+RainIntensity: 0
+RumbleIntensity: 0
+WaveSpeed: 0.75
+WaveLength: 0.5
+WaveAmplitude: 0
+SecondWaveLength: 0.1666667
+SecondWaveAmplitude: 0
+Clouds: 0
+Grime: 0
+BkgDroneVolume: 0.2569565
+BkgDroneNoThreatVolume: 1
+RandomItemDensity: 0.5
+RandomItemSpearChance: 0.2
+WaterReflectionAlpha: 1
+Palette: 149
+EffectColorA: 9
+EffectColorB: 15
+AmbientSounds: OMNI><msc-ritualmetal.ogg><727.803><251.5346><0.1304348><1.391304, OMNI><am_sub-cavetone.ogg><720.3446><231.3759><0.3586957><0.9608696, OMNI><am_win-nicewnd.ogg><746.8947><506.6381><0.4021739><1, 

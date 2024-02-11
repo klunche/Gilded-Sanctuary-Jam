@@ -1,4 +1,4 @@
-Template: NONE
+Template: GS_SettingsTemplate_Innerupper
 DangerType: None
 WaveSpeed: 0.5021799
 WaveLength: 0.7489101
@@ -8,6 +8,7 @@ SecondWaveAmplitude: 0
 Clouds: 0.1005322
 Grime: 0.1906702
 Palette: 148
-Effects: ZeroG-0.3804348-20-20, 
+PlacedObjects: CellDistortion><449.202><312.8058><-516~-17~50~86.60254~0.2065217~0.08695652~0~0.01086957, 
+AmbientSounds: OMNI><am_win-medwind.ogg><727.4406><520.6893><0><1, OMNI><msc-structurestrain.ogg><717.1986><170.5235><0.2282609><0.2565217, OMNI><msc-ritualmetal.ogg><728.3798><314.3401><0.1304348><1, SPOT><am_ind-warehouse01.ogg><751.967><400.5527><0.4456522><0.9021739><499.967><603.5527><-119.3553><-49.35535><0><0.1869567, 
 FadePalette: 149, 0.3711959
 WetTerrain: OFF

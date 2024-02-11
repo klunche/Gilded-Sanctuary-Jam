@@ -1,0 +1,21 @@
+DangerType: Thunder
+CeilingDrips: 0
+RainIntensity: 0
+RumbleIntensity: 0.01086957
+WaveSpeed: 0.5021799
+WaveLength: 0.7489101
+WaveAmplitude: 0.04860936
+SecondWaveLength: 0.1666667
+SecondWaveAmplitude: 0
+Clouds: 0.2826087
+Grime: 0.1195652
+BkgDroneVolume: 0.3
+BkgDroneNoThreatVolume: 1
+RandomItemDensity: 0.5
+RandomItemSpearChance: 0.2
+WaterReflectionAlpha: 1
+Palette: 149
+EffectColorA: 2
+EffectColorB: 15
+Effects: LightBurn-0.3152174-20-20, ZeroG-0.2173913-141-103, GRJGoldenFlakes-0.2065217-50-50, AboveCloudsView-1-20-20, 
+AmbientSounds: OMNI><am_win-medwind.ogg><727.4406><520.6893><0.4021739><1, OMNI><msc-structurestrain.ogg><707.1986><209.5235><0.2934783><0.2565217, OMNI><msc-ritualmetal.ogg><728.3798><314.3401><0.1304348><1, OMNI><msc-unrelentingbreakage.ogg><743.633><173.6622><0.4456522><0.2565217, 

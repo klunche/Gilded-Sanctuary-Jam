@@ -1,0 +1,7 @@
+Grime: 0
+Palette: 19
+EffectColorB: 15
+Effects: AboveCloudsView-1-19-80, SkyAndLightBloom-0.3695652-20-20, 
+PlacedObjects: LightSource><302.9983><151.55><0.3586957~Environment~-43~267~50~86.60254~1~0~None~0~0, LightSource><192.8754><338.1564><0.1086956~Environment~-193~51~50~86.60254~1~1~None~0~0, 
+FadePalette: 3, 0.3043478
+MorePalette0: 102, 0.3586957

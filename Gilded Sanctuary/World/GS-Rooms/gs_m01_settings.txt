@@ -1,0 +1,18 @@
+DangerType: None
+CeilingDrips: 0
+WaveSpeed: 0.51
+WaveLength: 1
+WaveAmplitude: 0.0001
+SecondWaveLength: 1
+SecondWaveAmplitude: 0.0001
+Clouds: 0.1086956
+Grime: 0.25
+RandomItemDensity: 0.2173913
+RandomItemSpearChance: 0.09130428
+Palette: 149
+EffectColorA: 15
+Effects: AboveCloudsView-1-20-20, ZeroG-0.2717391-30-30, GRJGoldenFlakes-0.0326087-40-40, LightBurn-0.0326087-50-50, 
+PlacedObjects: CustomDecal><-196.8148><-49.07561><0~767~1361~771~1360~0~0~373~0~1~0~greenwhite(var)~0.3043478~1~0.3043478~1~0.3043478~1~0.3043478~1, CustomDecal><149.8223><321.9083><-84~150~160~114~128~19~-357~-8~0.1086956~1~0~scavmark stonehead3~1~0~1~0~1~0~1~0, CustomDecal><551.6316><397.6507><-7~101~335~95~336~-6~-625~-87~0~1~0~scav wedges2~0.5978261~0~0.5978261~0~0.5978261~0~0.5978261~0, CustomDecal><734.8121><592.0684><-100~13~-137~65~53~66~-169~-759~0.09782609~1~0~scav wedges3(vert)~0.6304348~0~0.6304348~0~0.6304348~0~0.6304348~0, ScavengerOutpost><817.7033><574.8055><31~171~429.0001~125~0.2457388~69~69, CustomDecal><1076.449><420.5232><-117~188~48~266~175~114~-1064~-622~0~1~0~scavmark bigsun~0.5~0.5000004~0.5~0.5000004~0.5~0.5000004~0.5~0.5000004, CustomDecal><590.8459><485.1275><-2~135~242~132~233~4~-325~-440~0~1~0~scavmark wingedorb~1~0.5~1~0.5~1~0.5~1~0.5, ColouredLightSource><-204.8972><714.9216><-148~-229~FFFFE1~1364^-764~0.4565217~True~0.5~0~0.5~Always~0~100, CellDistortion><612.4716><523.552><-966~-54~50~86.60254~0.2391304~0.08695652~0~0.02173913, 
+AmbientSounds: OMNI><am_win-medwind.ogg><727.4406><520.6893><0.25><1.176087, OMNI><msc-ritualmetal.ogg><728.3798><314.3401><0.1086956><1.352174, 
+WetTerrain: OFF
+BackgroundType: atc_default_vanilla

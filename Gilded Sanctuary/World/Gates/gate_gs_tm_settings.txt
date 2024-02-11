@@ -1,3 +1,5 @@
+Template: GS_SettingsTemplate_Innerupper
+DangerType: None
 Grime: 0
 Palette: 19
 EffectColorB: 15
